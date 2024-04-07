@@ -26,7 +26,7 @@ ENV supervisor_conf /etc/supervisor/supervisord.conf
 COPY supervisord.conf ${supervisor_conf}
 
 # Volume configuration
-VOLUME ["/home/runner"]
+# VOLUME ["/home/runner"]
 
 # Copy mongoDB config & data
 COPY mongod.conf /etc/mongod.conf
