@@ -1,5 +1,3 @@
-function(key,value) {
-
-  // TODO
-
+function(key, value) {
+  return value
 }

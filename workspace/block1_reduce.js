@@ -1,5 +1,4 @@
-function(key, values) { 
-
-  // TODO
-
+function(key, values) {
+  //printjson({"reduceKey": key, "values": values});
+  return Array.sum(values);
 }
