@@ -47,3 +47,7 @@ switched to db admin
 ... }
 ... )
 ```
+
+### Connectar via shell a la DB
+
+mongo uoc -u sdge -p student
