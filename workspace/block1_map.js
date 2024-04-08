@@ -3,8 +3,10 @@ function() {
   var key = { area: this.area, year: year };
   if (this.biomass_value !== "ERROR") {
     // printjson({"mapKey": key, "value": [this.biomass_value,this.area_km2]});
-    // emit(key, [this.biomass_value,this.area_km2]);
-    // ALTERNATIVAMENT ES POT PASSAR COM A OBJECTE EN COMPTES D'ARRAY
-    emit(key, { biomass_value: this.biomass_value, area_km2_value: this.area_km2 });
+    valueObj = {
+      biomass_sum: this.biomass_value,
+      area_km2_sum: this.area_km2
+    }
+    emit(key, valueObj);
   }
 }

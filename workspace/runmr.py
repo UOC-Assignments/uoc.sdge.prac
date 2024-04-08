@@ -6,8 +6,6 @@ import pprint
 import sys
 from urllib.parse import quote_plus
 
-# print("hello world")
-
 params = sys.argv
 if len(params) not in [2,3]:
 	print("./runmr map-reduce-name [collection-name]")
