@@ -1,7 +1,5 @@
 function(key, values) {
 
-  // printjson({"reduceKey": key, "values Array": clean_values});
-
   var reduceObj = {
     biomass_sum: 0.0,
     area_km2_sum: 0.0
