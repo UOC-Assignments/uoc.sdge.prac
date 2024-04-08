@@ -1,5 +1,4 @@
 function(key, values) {
-
   var reduceObj = {
     biomass: 0.0,
     area_km2: 0.0
