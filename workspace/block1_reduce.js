@@ -1,7 +1,7 @@
 function(key, values) {
   var result = {
     biomass_sum: 0.0,
-    area_km2_sum: 0.0,
+    area_km2_sum: 0.0
   }
 
   for (val of values) {
