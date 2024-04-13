@@ -1,5 +1,5 @@
 function(key, value) {
-  result = value.biomass / value.area_km2
-  // printjson({ "reduceKey": key, "value": result })
+  result = value.biomass_sum / value.area_km2_sum
+  //printjson({ "reduceKey": key, "value": result })
   return result
 }
