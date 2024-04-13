@@ -4,8 +4,8 @@ function() {
   if (this.biomass_value !== "ERROR") {
     // printjson({"mapKey": key, "value": [this.biomass_value,this.area_km2]});
     valueObj = {
-      biomass: this.biomass_value,
-      area_km2: this.area_km2
+      biomass_sum: this.biomass_value,
+      area_km2_sum: this.area_km2
     }
     emit(key, valueObj);
   }
