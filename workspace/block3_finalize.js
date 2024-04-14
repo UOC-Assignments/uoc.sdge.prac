@@ -18,7 +18,7 @@ function(key, value) {
     }
   });
 
-  printjson({ "reduceKey": key, "value": specie_with_max_biomass })
+  //printjson({ "reduceKey": key, "value": specie_with_max_biomass })
 
   return specie_with_max_biomass
 }

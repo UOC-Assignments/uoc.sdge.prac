@@ -1,5 +1,5 @@
 function() {
-  var key = { campaign: this.campaign };
+  var key = this.campaign;
   if (this.biomass_value !== "ERROR") {
 
     // Escollim un format del valor associat a la clau que ens permetra
