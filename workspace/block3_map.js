@@ -10,9 +10,9 @@ function() {
     // en funcio de la especie per a cada campanya
 
     value = {
-      [this.scientific_name]: this.biomass_value
+      [this.scientific_name]: this.biomass_value,
     }
-    // printjson({"mapKey": key, "value": value});
+    //printjson({"mapKey": key, "value": value});
 
     emit(key, value);
   }

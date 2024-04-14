@@ -11,20 +11,15 @@ function(key, values) {
   var biomass_by_specie = values.reduce((acc, dictionary) => {
     Object.keys(dictionary).forEach(key => {
         var value = dictionary[key];
-        if (acc[key]) {
-            // Bugfix: Arrodonim a dos decimals per problemes observats al mostrar dades del diccionari (punts "....." intercalats amb valors al fer jsonprint)
-            acc[key] = +(acc[key] + value).toFixed(2);
-        } else {
-            acc[key] = value;
-        }
+        acc[key] = (acc[key] || 0) + value; // Bugfix: He hagut d'implementar un workaround per a obviar algunes entrades del diccionari de valors malformades. Exemple -> "Nezumia aequalis" : 241 .......... 22.08
     });
     return acc;
-}, {});
+  }, {});
 
-  // printjson({
-  //   "reduceKey": key,
-  //   "biomass_by_specie": biomass_by_specie,
-  // });
+  printjson({
+    "reduceKey": key,
+    "biomass_by_specie": biomass_by_specie,
+  });
 
   return (biomass_by_specie);
 }
