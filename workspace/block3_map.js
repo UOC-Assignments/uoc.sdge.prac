@@ -2,7 +2,7 @@ function() {
   var key = this.campaign;
   if (this.biomass_value !== "ERROR") {
 
-    // Escollim un format del valor associat a la clau que ens permetra
+    // Escollim un format del valor per a la clau que ens permetra
     // associar el valor de biomassa de les mostres d'especie de cada
     // campanya al seu nom d'especie. Aixi podrem generar un diccionari
     // de valors per a cada clau de manera que podrem utilitzar un objecte
