@@ -1,6 +1,7 @@
 function() {
   var year = this.date.split("/")[2];
   var key = { area: this.area, year: year };
+  // var key = { area: this.area, campaign: this.campaign }
   if (this.biomass_value !== "ERROR") {
     // printjson({"mapKey": key, "value": [this.biomass_value,this.area_km2]});
     valueObj = {
